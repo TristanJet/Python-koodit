@@ -7,7 +7,7 @@ ap = {
 
 while 1:
     print('-------------------')
-    opt = input('Fetch, Enter or quit? (e/f/q): ').lower()
+    opt = input('Fetch, Enter or quit? (f/e/q): ').lower()
     if opt not in opts:
         print('Invalid option')
         break
