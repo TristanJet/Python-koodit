@@ -1,9 +1,9 @@
 def main():
     val1 = getInput()
-    priceArea(val1)
+    pa1 = priceArea(val1)
     val2 = getInput()
-    priceArea(val2)
-    if val1 < val2:
+    pa2 = priceArea(val2)
+    if pa1 < pa2:
         print(f"The first pizza is cheaper value")
     else:
         print(f"The second pizza is cheaper value")
