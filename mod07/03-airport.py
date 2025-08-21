@@ -1,5 +1,3 @@
-import sys
-
 opts = ('e', 'f', 'q')
 
 ap = {
@@ -12,7 +10,7 @@ while 1:
     opt = input('Fetch, Enter or quit? (e/f/q): ').lower()
     if opt not in opts:
         print('Invalid option')
-        sys.exit()
+        break
     if opt == 'e':
         nam = input('Enter airport name: ').lower()
         if nam in ap.keys():
