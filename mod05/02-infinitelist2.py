@@ -1,8 +1,7 @@
 ls = []
 while 1:
     try:
-        raw = int(input("Enter a number to add, string to exit: "))
-        x = int(raw)
+        x = int(input("Enter a number to add, string to exit: "))
         ls.append(x)
     except ValueError:
         if len(ls) > 2:

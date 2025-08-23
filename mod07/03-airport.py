@@ -16,8 +16,7 @@ while 1:
         if nam in ap.keys():
             print(f'{nam} is already in the dataset')
             continue
-        icao = input('Enter ICAO: ').upper()
-        ap[nam] = icao
+        ap[nam] = input('Enter ICAO: ').upper() 
     elif opt == 'f':
         nam = input('Enter airport name: ').lower()
         print(f'Name: {nam}\nICAO: {ap[nam]}')
