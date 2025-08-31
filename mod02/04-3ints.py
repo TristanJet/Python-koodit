@@ -6,4 +6,4 @@ sum = one + two + three
 product = one * two * three
 print(f"Sum: {sum}")
 print(f"Product: {product}")
-print(f"Mean: {sum // 3}")
+print(f"Mean: {round(sum / 3, 3)}")

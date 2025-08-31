@@ -1,5 +1,3 @@
-import sys
-
 uname = "python"
 pswd = "rules"
 

@@ -8,7 +8,7 @@ i = 0
 while i < n:
     px = random.uniform(-1, 1)
     py = random.uniform(-1, 1)
-    if (px * px) + (py * py) < 1:
+    if px**2 + py**2 < 1:
         pcircle += 1
     i+=1
 

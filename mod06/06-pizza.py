@@ -15,7 +15,7 @@ def getInput():
 
 def priceArea(x):
     r = x[0] / 2
-    a = 3.14 * (r * r)
+    a = 3.14 * r**2
     return x[1] / a
 
 main()

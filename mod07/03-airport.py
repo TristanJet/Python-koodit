@@ -10,7 +10,7 @@ while 1:
     opt = input('Fetch, Enter or quit? (f/e/q): ').lower()
     if opt not in opts:
         print('Invalid option')
-        break
+        continue
     if opt == 'e':
         nam = input('Enter airport name: ').lower()
         if nam in ap.keys():
@@ -19,6 +19,9 @@ while 1:
         ap[nam] = input('Enter ICAO: ').upper() 
     elif opt == 'f':
         nam = input('Enter airport name: ').lower()
+        if nam not in ap.keys():
+            print(f'{nam} is NOT in dataset\nUnable to find')
+            continue
         print(f'Name: {nam}\nICAO: {ap[nam]}')
     elif opt == 'q':
         break

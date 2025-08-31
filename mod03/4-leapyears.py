@@ -8,10 +8,9 @@ if remcent == 0:
     if remfh == 0:
         print("Leap year!")
         sys.exit()
-
-remfour = yr % 4
-if remfour == 0:
-    if remcent != 0:
+else:
+    remfour = yr % 4
+    if remfour == 0:
         print("Leap year!")
         sys.exit()
 
