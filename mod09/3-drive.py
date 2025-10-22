@@ -12,13 +12,19 @@ class Car:
         if self.speed < 0:
             self.speed = 0
 
+    def drive(self, hr):
+        self.d += self.speed * hr
+
 def main():
     car = Car("ABC-123", 142)
     car.accel(30)
     car.accel(70)
     car.accel(50)
     print(car.speed)
-    car.accel(-200)
-    print(car.speed)
+    car.drive(2)
+    print(car.d)
+    car.accel(-50)
+    car.drive(1)
+    print(car.d)
 
 main()
