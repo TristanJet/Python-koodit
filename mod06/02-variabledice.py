@@ -1,6 +1,6 @@
 import random
 
-nsides = 21
+nsides = 99
 
 def main():
     val = 0

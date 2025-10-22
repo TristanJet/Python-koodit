@@ -8,8 +8,7 @@ while 1:
         print('Existing name')
     else:
         print('New name')
-        names.add(nam)
-
+    names.add(nam)
 print('\nAll names: ')
 for n in names:
     print(n)
